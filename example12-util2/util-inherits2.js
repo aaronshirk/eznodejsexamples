@@ -8,7 +8,6 @@ Spy.prototype.blowStuffUp = function() {
 	console.log('blowing stuff up');
 }
 
-
 // Create a 'subClass' Spy constructor function
 function BritishSecretServiceSpy () {
 	this.pistol = 'Walther PPK',
