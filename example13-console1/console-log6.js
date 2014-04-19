@@ -1,6 +1,5 @@
 var util = require('util');
-// Let's look at a json example
-// If there is not format string in the first arguement, console.log uses util.inspect on each argument
+
 var jsonObject = {
 	a : {
 		b : {
@@ -26,14 +25,10 @@ var jsonObject = {
 	l : 'violet'
 };
 
-console.log(jsonObject);
-console.log();
-console.log(util.inspect(jsonObject));
 
-
-
+// %j prints a jsonObject to infinite depth, not just to depth of 2 which util.inspect defaults to
+console.log('===== With format string =========================');
 console.log('%j', jsonObject);
 console.log();
-
-console.log();
 console.log(util.inspect(jsonObject, {depth : null}));
+// Both of these print to infinite depth, but %j is ugly, whereas util.inspect is pretty

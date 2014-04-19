@@ -27,9 +27,7 @@ var jsonObject = {
 };
 
 
-// It appears %j prints a jsonObject to infinite depth, not just to depth of 2 which util.inspect defaults to
-console.log('%j', jsonObject);
+console.log('===== No format string =========================');
+console.log(jsonObject);
 console.log();
-console.log(util.inspect(jsonObject, {depth : null}));
-
-// Both of these print to infinite depth, but %j is ugly, whereas util.inspect is pretty
+console.log(util.inspect(jsonObject));
