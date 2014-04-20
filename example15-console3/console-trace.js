@@ -7,5 +7,4 @@ function doTheNextThing(iter) {
 	
 }
 
-
 doTheNextThing(1);

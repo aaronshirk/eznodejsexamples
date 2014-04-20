@@ -1,7 +1,5 @@
 console.time('10-seconds');
 
-
-
 function takeMyTime(times) {
 	console.log(times);
 	setTimeout(function() {
@@ -13,9 +11,8 @@ function takeMyTime(times) {
 	}, 1000);
 }
 
-
 function endTimer() {
-	console.timeEnd('10-seconds');
+	console.timeEnd('10-sconds');
 }
 
 takeMyTime(10);
